@@ -8,7 +8,7 @@ object OOBasics {
     // println(person.age)  // will not work if val/var not added
     println(person.age)
     println(person.greet("Ram"))
-
+  // Primary constructor is part of Scala Class itself unlike Java where constructor is separate
   }
 
 }
@@ -25,7 +25,8 @@ class Person(name: String, val age: Int)  {
   //OverLoading
   def greet(): Unit = println(s"Hi, I am $name")
 
-  //Multiple Constructors - using def this
+  //Multiple Constructors - using def this - Another constructor is called
+  //Constructor Overloading
   def this(name: String) = this (name,0) //Auxiliary Constructor can only call an existing/primary constructor
 }
 

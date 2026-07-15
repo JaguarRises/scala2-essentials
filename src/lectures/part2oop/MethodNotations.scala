@@ -51,7 +51,7 @@ object MethodNotations {
 
     println(mary.apply())
     println(mary())  // equivalent - called the instance as a function
-    // this is because of apply() method - apply is special\
+    // this is because of apply() method - apply is special
     println((mary.+("The Rockstar")).name)
     println((mary + "The Phoenix").name)
     println((+mary).age)

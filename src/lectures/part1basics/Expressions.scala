@@ -20,7 +20,7 @@ object Expressions {
 
     //If Expression
 
-    val aCondition = true;
+    val aCondition = true
 
     val aConditionValue = if(aCondition) 5 else 3
     // If expression gives a value
@@ -29,17 +29,17 @@ object Expressions {
     println(aConditionValue)
 
     var i = 0
-    while(i < 5){
+    while(i < 5) {
       println(i)
       i += 1
 
       //Don't write loops in scala
       //Everything in Scala is an expression
+    }
+      val aWeirdValue: Unit = {aVariable = 3}   //Unit === void equivalent
+      println("aWeirdValue: " + aWeirdValue)    //Unit only holds ()
 
-      val aWeirdValue = {aVariable = 3}   //Unit === void equivalent
-      println(aWeirdValue)    //Unit only holds ()
-
-      //Side effects in Scala are expresions returning Unit
+      //Side effects in Scala are expressions returning Unit
 
       //Side Effects - Printing something to console - println(). while, reassigning
 
@@ -53,7 +53,8 @@ object Expressions {
         //here it is of type String
       }
 
-    }
+    println(aCodeBlock)
+
   }
 
 }
